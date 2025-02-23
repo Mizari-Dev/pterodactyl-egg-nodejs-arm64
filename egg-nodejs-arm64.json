@@ -4,16 +4,13 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2024-12-29T23:32:18+00:00",
-    "name": "Discord Bot \u2022 NodeJS",
-    "author": "pterodactyl@stan1712.com",
-    "description": "A perfect boilerplate to start serving your DiscordJs bot !\r\nCheck out the README to get started : https:\/\/github.com\/stanislasbdx\/pterodactyl-egg-discord",
+    "exported_at": "2025-02-23T14:15:04+00:00",
+    "name": "NodeJS ARM64",
+    "author": "warriorofmeadow@gmail.com",
+    "description": "An egg that should works for ARM64 system",
     "features": null,
     "docker_images": {
-        "Node LTS latest (recommended)": "5140\/discord-egg:latest",
-        "Node 18": "5140\/discord-egg:node-18",
-        "Node 22": "5140\/discord-egg:node-22",
-        "Devbuilds": "5140\/discord-egg:snapshot"
+        "Node LTS": "mizari\/nodejs-arm64-egg:latest"
     },
     "file_denylist": [],
     "startup": "node ${STARTUP_FILE}",
@@ -25,7 +22,7 @@
     },
     "scripts": {
         "installation": {
-            "script": "#!\/bin\/bash\r\n\r\napt -y update\r\napt -y upgrade\r\n\r\napt -y install curl\r\n\r\necho \"-- Downloading from : $REPO_URL\"\r\n\r\ncd \/mnt\/server\r\n\r\ncurl -L $REPO_URL\/projectdefaults\/package.json > package.json\r\ncurl -L $REPO_URL\/projectdefaults\/index.js > index.js\r\n\r\necho \"-- Server installed\"",
+            "script": "#!\/bin\/bash\r\n\r\napt -y update\r\napt -y upgrade\r\n\r\napt -y install curl\r\n\r\necho \"-- Downloading from : $REPO_URL\"\r\n\r\ncd \/mnt\/server\r\n\r\ncurl -L $REPO_URL\/projectdefaults\/index.js > index.js\r\n\r\necho \"-- Server installed\"",
             "container": "debian:buster-slim",
             "entrypoint": "bash"
         }
@@ -45,7 +42,7 @@
             "name": "Github Repository URL",
             "description": "The Github repository where project defaults will be downloaded.",
             "env_variable": "REPO_URL",
-            "default_value": "https:\/\/raw.githubusercontent.com\/stanislasbdx\/pterodactyl-egg-discord\/refs\/heads\/master\/",
+            "default_value": "https:\/\/raw.githubusercontent.com\/Mizari-Dev\/pterodactyl-egg-nodejs-arm64\/refs\/heads\/master\/",
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|string",

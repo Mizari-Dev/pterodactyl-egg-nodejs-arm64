@@ -4,9 +4,11 @@ This is an egg dedicated to NodeJS app hosting on pterodactyl panel on ARM64 sys
 
 > Docker image: <https://hub.docker.com/r/mizari/nodejs-arm64-egg>
 >
-> Github Repository <https://github.com/Mizari-Dev/pterodactyl-egg-nodejs-arm64>
+> Github Repository: <https://github.com/Mizari-Dev/pterodactyl-egg-nodejs-arm64>
 > 
 > Docker image used: <https://hub.docker.com/_/node>
+>
+> Egg based on: <https://github.com/stanislasbdx/pterodactyl-egg-discord>
 
 An issue ? A suggestion ? DM me on discord (mizari.dev) !
 

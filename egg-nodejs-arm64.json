@@ -4,13 +4,16 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2025-02-23T14:15:04+00:00",
+    "exported_at": "2025-02-23T21:40:19+00:00",
     "name": "NodeJS ARM64",
     "author": "warriorofmeadow@gmail.com",
     "description": "An egg that should works for ARM64 system",
     "features": null,
     "docker_images": {
-        "Node LTS": "mizari\/nodejs-arm64-egg:latest"
+        "Node LTS latest (recommanded)": "mizari\/nodejs-arm64-egg:latest",
+        "Node LTS 22": "mizari\/nodejs-arm64-egg:22",
+        "Node LTS 20": "mizari\/nodejs-arm64-egg:20",
+        "Node LTS 18": "mizari\/nodejs-arm64-egg:18"
     },
     "file_denylist": [],
     "startup": "node ${STARTUP_FILE}",
@@ -49,4 +52,3 @@
             "field_type": "text"
         }
     ]
-}

@@ -30,7 +30,8 @@ To use it, just create a server with this egg in the "Nest Configuration" sectio
 
 By default when creating a server, the docker image will be the latest (stable), but you can choose the others proposed in the list or use your custom one *(you won't get support tho)*.
 
-![image](https://github.com/user-attachments/assets/153a0391-91b2-436f-bc7e-66b7ac070727)
+![image](https://github.com/user-attachments/assets/2a5bff81-22fb-43ba-b509-9fc4a7d77712)
+
 
 ##### Tags
 

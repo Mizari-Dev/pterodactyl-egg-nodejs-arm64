@@ -1,14 +1,14 @@
-# 🤖 — Discord.JS Pterodactyl Bot Hosting Egg and Docker image
+# 🤖 — NodeJS Pterodactyl App Hosting Egg and Docker image for ARM64 systems
 
-This is an egg dedicated to NodeJS bot hosting (discord.js & nodejs) on pterodactyl panel.
+This is an egg dedicated to NodeJS app hosting on pterodactyl panel on ARM64 systems.
 
-> Docker image: <https://hub.docker.com/r/5140/discord-egg>
+> Docker image: <https://hub.docker.com/r/mizari/nodejs-arm64-egg>
 >
-> Github Repository <https://github.com/stanislasbdx/pterodactyl-egg-discord⁠>
+> Github Repository <https://github.com/Mizari-Dev/pterodactyl-egg-nodejs-arm64>
 > 
 > Docker image used: <https://hub.docker.com/_/node>
 
-An issue ? A suggestion ? DM me on discord (stan1712) !
+An issue ? A suggestion ? DM me on discord (mizari.dev) !
 
 ## 🏗️・Installation
 
@@ -17,7 +17,7 @@ To install this egg :
 1. Go into Admin panel
 2. Go to "Nests"
 3. Click "Import Egg"
-4. Choose the .json file named "egg-discordjs"
+4. Choose the .json file named "egg-nodejs-arm64"
 5. And import !
 
 ## 🌌・Usage
@@ -40,20 +40,7 @@ By default when creating a server, the docker image will be the latest (stable),
 
 #### Defaults files from repository
 
-In addition you can choose from where to get the default project files like **index.js** and **package.json**.
-> Default value : https://raw.githubusercontent.com/stanislasbdx/pterodactyl-egg-discord/refs/heads/master/
+In addition you can choose from where to get the default project file like **index.js**.
+> Default value : https://raw.githubusercontent.com/Mizari-Dev/pterodactyl-egg-nodejs-arm64/refs/heads/master/
 
-![image](https://github.com/user-attachments/assets/05efea31-dbb9-4d94-82da-12a6dc8b5366)
-
-## 🤝・Contributing
-
-### Building a Docker image
-
-You can build the docker image with the LTS Node version, or a specific version.
-
-```bash
-podman build .
-
-# To build in specific Node version
-podman build --build-arg NODE_VERSION=18 .
-```
+![image](https://github.com/user-attachments/assets/fd40959f-e362-448f-a4c6-3a896b1d41db)
